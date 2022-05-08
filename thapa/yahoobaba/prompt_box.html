@@ -1,0 +1,50 @@
+<html>
+
+<head>
+
+
+    <script>
+     var a=   prompt("what is your name? ")
+ document.write(a)
+
+
+    //    1. // const sentence = 'my name is abc'
+        // const rvsBy=(string,separator)=>{
+        //     return string.split(separator).reverse().join(separator)
+        // } 
+        // const newSentence= rvsBy(sentence, '')
+        // const answer = rvsBy(newSentence, '')
+        // console.log(answer)
+
+        // 2.
+        // const sentence = 'my name is abc'
+        // const words =sentence.split('')
+        // var newSentence =''
+        // words.forEach(word=>{
+        //     newSentence +=word.split('').reverse().join('')+''
+
+        // })
+        // console.log(newSentence)
+
+
+        // 3.
+        const text =" my name is abc";
+        const reversedWholeSentence= reversedBySeparator(text, "");
+        console.log(reversedWholeSentence);
+
+        const reversedEachSentence= reversedBySeparator(reversedWholeSentence, "");
+
+        function reversedBySeparator(string, separator){
+            return string.split(separator).reverse().join( separator);
+
+     }
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

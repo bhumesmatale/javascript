@@ -1,0 +1,111 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+
+        //length
+        var a = [10, 20, 30];
+        console.log(a.length);
+
+        //shift : array me se 1 element remove hojayega 1st vala(begining of array)
+        var sh = [10, 20, 30, 40, 50];
+        console.log(sh.shift());//10
+        console.log(sh);
+
+        //unshift: array me se 1 or more element add hojayege starting ke array me hi (begining of array)
+        var unsh = [10, 20, 30, 40, 50];
+        console.log(unsh.unshift('66'));
+        console.log(unsh);
+
+
+        // pop: remove last element(end of array)
+        var p = [10, 20, 30, 40];
+        console.log(p.pop());
+        console.log(p);
+
+        //push:add last element(end of array)
+        var pu = [10, 20, 30, 40, 50];
+        console.log(pu.push('66'));
+        console.log(pu);
+
+        //indexof:aage se check karega 
+        var i = [10, 20, 30];
+        console.log(i.indexOf(20));
+        console.log(i.indexOf(50)); //50 array ke list me nhi hai to ye -1 show karega
+        // console.log(i);
+
+        //lastindexof: last se check karega
+        var lastindex = [10, 20, 30, 40, 50, 20, 50, 60, 30];
+        console.log(lastindex.lastIndexOf(30));
+        console.log(lastindex.lastIndexOf(50));
+
+        //includes : exact value match krta hai agar value match hui to true nhi to false show karega(like if)
+        var incl = [10, 20, 30, 40, 50];
+        console.log(incl.includes(30));
+        console.log(incl.includes(100));
+
+
+        // join: array ko string me convert krti hai
+        var jo = [10, 20, 30, 40, 50, 20, 50, 60, 30];
+        console.log(jo.join(''));
+        console.log(jo.join('/'));
+
+
+        // reverse
+        var rev = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+        console.log(rev.reverse());
+
+        //concat:combine two aaray
+        var concA = [10, 20, 30, 40];
+        var concB = [50, 60, 70, 80, 90, 0, 1, 2];
+        console.log(concA.concat(concB));
+
+        // foreach
+        var forarr = [10, 20, 30, 40, 50];
+        forarr.forEach(function (value, index) {
+            console.log(value);
+        })
+
+        // every:every condition check karega aur match karega tabhi ture karega nhi to false
+        var everyar = [10, 30, 40, 50];
+        var ever = everyar.every(function (value, index) {
+            return value > 5;
+        })
+        console.log(ever);
+
+        //some: 1 bhi value condition se pass ho jati hai to ye true pass karega
+        var someyar = [10, 30, 40, 50];
+        var somerr = someyar.some(function (value, index) {
+            return value > 10;
+        })
+        console.log(somerr);
+
+        //filter :condition me match krke naya array crete krta hai
+        var fil = [10, 30, 40, 50];
+        var filt = someyar.filter(function (value, index) {
+            return value > 10;
+        })
+        console.log(filt);
+
+        // slice: 1 no ka element and 1-3 =2 to 20 ,30aayega
+        var sli = [10, 20, 30, 40];
+        console.log(sli.slice(1, 3));
+
+        // splice
+        var slp = [10, 20, 30, 40];
+        console.log(slp.splice(1, 0, 100, 200, 300));
+        console.log(slp);
+
+        //map
+        var mapa = [1, 2, 3, 4, 5];
+        var ma = mapa.map(function (value, index) {
+            return value * 5;
+        })
+        console.log(ma)
+    </script>
+</body>
+
+</html>

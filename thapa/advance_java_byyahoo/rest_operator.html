@@ -1,0 +1,28 @@
+<html>
+
+<head>
+
+    <title>Rest operator</title>
+    <script>
+        function sum(name, course, ...args) {
+            console.log(args);
+
+            document.write(`hello ${name} of ${course} :`);
+
+            let sum = 0;
+            for (let i in args) {
+                sum += args[i];
+            }
+            document.write(sum + "<br>");
+        }
+        sum("payal matale", "MCA", 20, 30, 40);
+        sum("rita bansode", "Msc", 60, 50);
+        sum("nilu balbudhe", "Msc", 60, 50, 70, 66, 45, 50);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

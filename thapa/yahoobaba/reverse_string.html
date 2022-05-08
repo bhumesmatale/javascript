@@ -1,0 +1,38 @@
+<html>
+
+<head>
+
+
+    <script>
+
+        // 1
+
+        const text = " my name is abc";
+        const reversedWholeSentence = reversedBySeparator(text, "");
+        console.log(reversedWholeSentence);
+
+        const reversedEachSentence = reversedBySeparator(reversedWholeSentence, "");
+
+        function reversedBySeparator(string, separator) {
+            return string.split(separator).reverse().join(separator);
+
+        }
+        document.write(text + "<br>")
+
+        document.write(reversedWholeSentence + "<br>")
+
+
+// 2
+
+var string="i am payal";
+document.write(string +"<br>");
+for( var i=string.length-1;i>=0;i--)
+{
+let newstring=string[i];
+document.write(newstring);
+}
+
+    </script>
+</head>
+
+</html>
